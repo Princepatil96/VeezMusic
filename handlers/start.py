@@ -55,33 +55,33 @@ async def start_(client: Client, message: Message):
         f"""✨ **Welcome {message.from_user.mention} !**\n
 💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music on groups through the new Telegram's voice chats!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **Find out all the Bot's commands and how they work by clicking on the » COMMAND button!**
 
-❔ **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+❔ **To know how to use this bot, please click on the » BASIC GUIDE button!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ ADD ME TO YOU GROUP ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("👑⚡ BASIC GUIDE ⚡👑", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("👑⚡HELPER COMMAND⚡👑", callback_data="cbcmds"),
+                    InlineKeyboardButton("👑⚡OWNER⚡👑", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👑⚡SUPPORT GROUP⚡👑", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        " 👑⚡SUPPORT CHANNEL⚡👑", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                        "👑⚡ POWERED BY⚡👑", url="https://t.me/KING_PRINCE_SUPPORT"
                     )
                 ],
             ]
@@ -101,9 +101,9 @@ async def start(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("⚡👑GROUP👑⚡", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "⚡👑CHANNEL👑⚡", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
